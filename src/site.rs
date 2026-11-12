@@ -203,7 +203,7 @@ impl<'a> Site<'a> {
                 weight: p.front.weight,
             }
         };
-        let prev = at.checked_sub(1).map(&make);
+        let prev = at.checked_sub(1).map(make);
         let next = (at + 1 < section.pages.len()).then(|| make(at + 1));
         (prev, next)
     }
