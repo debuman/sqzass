@@ -18,7 +18,7 @@ Vercel, Cloudflare Pages, or a plain directory served over HTTP.
 
 ```bash
 curl -fsSL https://sqzass.sqzer.com/install.sh | sh   # static binary
-cargo install --git https://github.com/sqzer-x/sqzass  # from source
+cargo install --git https://github.com/debuman/sqzass  # from source
 yay -S sqzass                                          # Arch, from the AUR
 ```
 
