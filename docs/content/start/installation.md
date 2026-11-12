@@ -26,7 +26,7 @@ nothing else: no shell config, no `PATH` edits.
 If you already have Rust, one line builds it from source:
 
 ```bash
-cargo install --git https://github.com/sqzer-x/sqzass
+cargo install --git https://github.com/debuman/sqzass
 ```
 
 ## Arch Linux
@@ -61,7 +61,7 @@ tarball.
 ## From source
 
 ```bash
-git clone https://github.com/sqzer-x/sqzass
+git clone https://github.com/debuman/sqzass
 cd sqzass
 cargo build --release
 ```
@@ -85,13 +85,13 @@ cargo build --release --no-default-features --features pure-rust
 
 ## Prebuilt binaries
 
-Attached to each [release](https://github.com/sqzer-x/sqzass/releases): two
+Attached to each [release](https://github.com/debuman/sqzass/releases): two
 statically linked Linux builds, `x86_64-unknown-linux-musl` and
 `aarch64-unknown-linux-musl`, and an `aarch64-apple-darwin` one, each with a
 `.sha256` beside it.
 
 ```bash
-curl -LO https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz
+curl -LO https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz
 tar xzf sqzass-x86_64-unknown-linux-musl.tar.gz
 sudo install -m755 sqzass-*/sqzass /usr/local/bin/
 ```

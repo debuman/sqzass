@@ -19,7 +19,7 @@ Set up sqzass in this project.
 
 Install it — it is not on crates.io, so `cargo install sqzass` fails:
   curl -fsSL https://sqzass.sqzer.com/install.sh | sh
-  # from source: cargo install --git https://github.com/sqzer-x/sqzass
+  # from source: cargo install --git https://github.com/debuman/sqzass
 
 Then scaffold and build:
   sqzass init .
@@ -51,7 +51,7 @@ label = "curl"
 
 [[extra.install]]
 label = "cargo"
-cmd = "cargo install --git https://github.com/sqzer-x/sqzass"
+cmd = "cargo install --git https://github.com/debuman/sqzass"
 
 [[extra.install]]
 label = "AUR"

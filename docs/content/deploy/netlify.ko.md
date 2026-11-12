@@ -8,11 +8,11 @@ toc = true
 ```toml
 # netlify.toml
 [build]
-  command   = "curl -sSL https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build"
+  command   = "curl -sSL https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build"
   publish   = "public"
 
 [context.deploy-preview]
-  command   = "curl -sSL https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build --base-url $DEPLOY_PRIME_URL"
+  command   = "curl -sSL https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build --base-url $DEPLOY_PRIME_URL"
 ```
 
 설정은 이게 전부입니다. 플러그인도, 빌드 이미지도, 런타임도 없습니다.
@@ -25,7 +25,7 @@ Netlify 빌드 이미지에는 Rust 툴체인이 기본으로 없고, 넣으면 
 도는 것과 같은 성질입니다.
 
 소스에서 빌드하고 싶으면 `cargo install --git
-https://github.com/sqzer-x/sqzass`도 됩니다. 다만 느립니다.
+https://github.com/debuman/sqzass`도 됩니다. 다만 느립니다.
 
 ## 배포 프리뷰에는 자기 base_url이 필요합니다
 

@@ -8,11 +8,11 @@ toc = true
 ```toml
 # netlify.toml
 [build]
-  command   = "curl -sSL https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build"
+  command   = "curl -sSL https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build"
   publish   = "public"
 
 [context.deploy-preview]
-  command   = "curl -sSL https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build --base-url $DEPLOY_PRIME_URL"
+  command   = "curl -sSL https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1 && ./sqzass build --base-url $DEPLOY_PRIME_URL"
 ```
 
 That is the whole configuration. No plugin, no build image, no runtime.
@@ -26,7 +26,7 @@ makes it work in Alpine, in a scratch container, and on a machine older than the
 one that built it.
 
 If you would rather build from source, `cargo install --git
-https://github.com/sqzer-x/sqzass` works too and is slower.
+https://github.com/debuman/sqzass` works too and is slower.
 
 ## Deploy previews need their own base_url
 

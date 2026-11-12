@@ -10,7 +10,7 @@ In the project's build settings:
 | | |
 |---|---|
 | Framework preset | None |
-| Build command | `curl -sSL https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz \| tar xz --strip-components=1 && ./sqzass build` |
+| Build command | `curl -sSL https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz \| tar xz --strip-components=1 && ./sqzass build` |
 | Build output directory | `public` |
 
 There is no configuration file to write.

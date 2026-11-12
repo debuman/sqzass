@@ -25,7 +25,7 @@ jobs:
     steps:
       - run: apk add --no-cache git nodejs
       - uses: actions/checkout@v4
-      - run: wget -qO- https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1
+      - run: wget -qO- https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz | tar xz --strip-components=1
       - run: ./sqzass build
       - name: pages 브랜치로 발행
         run: |

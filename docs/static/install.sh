@@ -7,7 +7,7 @@
 # 그 밖의 일은 하지 않는다 — 셸 설정도, PATH도 건드리지 않는다.
 set -eu
 
-repo="sqzer-x/sqzass"
+repo="debuman/sqzass"
 
 # 리눅스 ARM은 커널이 `aarch64`로 답하지만, 32비트 유저스페이스를 얹은 이미지 등
 # 일부는 `arm64`로 답한다. 둘 다 같은 아티팩트다.

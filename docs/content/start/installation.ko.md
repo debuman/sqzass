@@ -26,7 +26,7 @@ curl -fsSL https://sqzass.sqzer.com/install.sh | sh
 Rust가 이미 있다면 한 줄로 소스에서 빌드합니다.
 
 ```bash
-cargo install --git https://github.com/sqzer-x/sqzass
+cargo install --git https://github.com/debuman/sqzass
 ```
 
 ## Arch Linux
@@ -61,7 +61,7 @@ git이나 릴리스 타르볼에서 설치합니다.
 ## 소스에서 빌드
 
 ```bash
-git clone https://github.com/sqzer-x/sqzass
+git clone https://github.com/debuman/sqzass
 cd sqzass
 cargo build --release
 ```
@@ -85,12 +85,12 @@ cargo build --release --no-default-features --features pure-rust
 
 ## 미리 빌드된 바이너리
 
-[릴리스](https://github.com/sqzer-x/sqzass/releases)마다 정적 링크된 리눅스 빌드 둘
+[릴리스](https://github.com/debuman/sqzass/releases)마다 정적 링크된 리눅스 빌드 둘
 (`x86_64-unknown-linux-musl`, `aarch64-unknown-linux-musl`)과
 `aarch64-apple-darwin` 빌드가 붙습니다. 각각 `.sha256`이 옆에 있습니다.
 
 ```bash
-curl -LO https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz
+curl -LO https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz
 tar xzf sqzass-x86_64-unknown-linux-musl.tar.gz
 sudo install -m755 sqzass-*/sqzass /usr/local/bin/
 ```

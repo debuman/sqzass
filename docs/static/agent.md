@@ -9,7 +9,7 @@ It is **not on crates.io**. `cargo install sqzass` will fail.
 
 ```bash
 curl -fsSL https://sqzass.sqzer.com/install.sh | sh
-# with Rust: cargo install --git https://github.com/sqzer-x/sqzass
+# with Rust: cargo install --git https://github.com/debuman/sqzass
 # on Arch:   yay -S sqzass
 ```
 

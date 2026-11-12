@@ -10,7 +10,7 @@ toc = true
 | | |
 |---|---|
 | 프레임워크 프리셋 | 없음 |
-| 빌드 명령 | `curl -sSL https://github.com/sqzer-x/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz \| tar xz --strip-components=1 && ./sqzass build` |
+| 빌드 명령 | `curl -sSL https://github.com/debuman/sqzass/releases/latest/download/sqzass-x86_64-unknown-linux-musl.tar.gz \| tar xz --strip-components=1 && ./sqzass build` |
 | 빌드 출력 디렉터리 | `public` |
 
 작성할 설정 파일이 없습니다.
